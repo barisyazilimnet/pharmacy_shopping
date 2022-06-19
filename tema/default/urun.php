@@ -28,11 +28,7 @@ if(!empty($uk)){
 	<div class="container">
 		<div class="row">
 			<div class="col-md-9 col-xs-12 section-common">
-			<?php if($uid){
-				$foto=mysqli_fetch_object(mysqli_query($baglan,"select reklam_urun from ust_kategori where kategori_ust_id=$uid"));
-			?>
-				<a class="light-effect adv-main-content"><img src="<?php echo SİTE_URL; ?>login/upload/kategori/<?php echo $foto->reklam_urun; ?>" alt=""></a>
-			<?php } ?>
+			
 				<div class="products row row-inline-block text-center">
 				<?php 
 				while($urungetir=mysqli_fetch_object($urunler)){
